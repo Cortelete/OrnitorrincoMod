@@ -1,0 +1,59 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.ornitorrinco.idle": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": ["-5deg", 0, 0]
+        },
+        "bill": {
+          "rotation": ["5deg", 0, 0]
+        },
+        "tail": {
+          "rotation": [0, 0, "5deg"]
+        }
+      }
+    },
+    "animation.ornitorrinco.walk": {
+      "loop": true,
+      "bones": {
+        "leg_front_left": {
+          "rotation": ["sin(query.anim_time * 15) * 30deg", 0, 0]
+        },
+        "leg_front_right": {
+          "rotation": ["-sin(query.anim_time * 15) * 30deg", 0, 0]
+        },
+        "leg_back_left": {
+          "rotation": ["-sin(query.anim_time * 15) * 30deg", 0, 0]
+        },
+        "leg_back_right": {
+          "rotation": ["sin(query.anim_time * 15) * 30deg", 0, 0]
+        },
+        "tail": {
+          "rotation": [0, 0, "sin(query.anim_time * 10) * 10deg"]
+        }
+      }
+    },
+    "animation.ornitorrinco.swim": {
+      "loop": true,
+      "bones": {
+        "leg_front_left": {
+          "rotation": ["sin(query.anim_time * 20) * 45deg", 0, 0]
+        },
+        "leg_front_right": {
+          "rotation": ["-sin(query.anim_time * 20) * 45deg", 0, 0]
+        },
+        "leg_back_left": {
+          "rotation": ["-sin(query.anim_time * 20) * 45deg", 0, 0]
+        },
+        "leg_back_right": {
+          "rotation": ["sin(query.anim_time * 20) * 45deg", 0, 0]
+        },
+        "tail": {
+          "rotation": [0, 0, "sin(query.anim_time * 15) * 30deg"]
+        }
+      }
+    }
+  }
+}
